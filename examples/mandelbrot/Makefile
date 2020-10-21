@@ -1,7 +1,7 @@
 CXX=g++
 CFLAGS=-Wall
-OBJ=main.cpp ../../src/gterm.c
-INCLUDE=-I../../include
+OBJ=main.cpp ../../gterm.c
+INCLUDE=-I../../
 
 ifndef DEBUG
 	CFLAGS+= -Werror -Wpedantic -Wextra
