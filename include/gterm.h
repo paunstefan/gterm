@@ -11,6 +11,10 @@
 #ifndef GTERM_H
 #define GTERM_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -186,5 +190,9 @@ void gt_draw_rect(gt_screen *screen, uint32_t x, uint32_t y, uint32_t w, uint32_
  * @param col Color, from the gt_color enum or using the gt_get_color() function.
  */
 void gt_draw_line(gt_screen *screen, uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint8_t col);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* GTERM_H */
